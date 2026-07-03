@@ -1,0 +1,7 @@
+body { font-family: sans-serif; margin: 0; text-align: center; background: #fafafa; }
+nav { display: flex; justify-content: space-between; padding: 20px; background: #fff; }
+.hero { background: #1a252f; color: #fff; padding: 60px 20px; }
+button { background: #3498db; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; margin-top: 15px; }
+.grid { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+.card { background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 200px; }
+footer { background: #1a252f; color: #ccc; padding: 15px; font-size: 0.8rem; }
