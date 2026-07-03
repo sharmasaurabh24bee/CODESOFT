@@ -1,0 +1,4 @@
+body { font-family: sans-serif; margin: 0; padding: 20px; background: #f4f4f4; color: #333; line-height: 1.5; }
+header, section, footer { background: #fff; padding: 20px; margin-bottom: 10px; border-radius: 5px; }
+header { background: #2c3e50; color: #fff; text-align: center; }
+a { color: #3498db; text-decoration: none; font-weight: bold; }
