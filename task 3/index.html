@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <div id="txt">0</div>
+        <div class="keys">
+            <button onclick="clr()">C</button><button onclick="del()">&larr;</button><button onclick="ins('/')">/</button><button onclick="ins('*')">&times;</button>
+            <button onclick="ins('7')">7</button><button onclick="ins('8')">8</button><button onclick="ins('9')">9</button><button onclick="ins('-')">-</button>
+            <button onclick="ins('4')">4</button><button onclick="ins('5')">5</button><button onclick="ins('6')">6</button><button onclick="ins('+')">+</button>
+            <button onclick="ins('1')">1</button><button onclick="ins('2')">2</button><button onclick="ins('3')">3</button><button onclick="eq()" style="grid-row:span 2; height:110px; background:#2ecc71;">=</button>
+            <button onclick="ins('0')" style="grid-column:span 2;">0</button><button onclick="ins('.')">.</button>
+        </div>
+    </div>
+    <script>
+        let s = document.getElementById('txt');
+        function ins(v) { if(s.innerText=='0'&&v!='.') s.innerText=v; else s.innerText+=v; }
+        function clr() { s.innerText='0'; }
+        function del() { s.innerText = s.innerText.slice(0,-1)||'0'; }
+        function eq() { try { s.innerText = eval(s.innerText); } catch { s.innerText='Error'; } }
+    </script>
+</body>
+</html>

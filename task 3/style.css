@@ -1,0 +1,6 @@
+body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #eef2f3; margin:0; font-family: sans-serif;}
+.calc { background: #2c3e50; width: 260px; padding: 15px; border-radius: 8px; }
+#txt { background: #1a252f; color: #fff; text-align: right; padding: 15px; font-size: 1.8rem; margin-bottom: 15px; overflow: hidden; border-radius: 4px;}
+.keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+button { height: 50px; font-size: 1.2rem; background: #34495e; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:active { opacity: 0.8; }
